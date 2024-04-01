@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Sign Up​">
+    <meta name="description" content="">
+    <title>sign_in</title>
+    <link rel="stylesheet" href="{% static 'nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'sign_in.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 6.5.3, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#6f809e">
+    <meta property="og:title" content="sign_in">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="{% static 'intlTelInput/' %}"></head>
+    <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+      <form action="register" method="post">
+        {% csrf_token %} 
+    <section class="u-clearfix u-gradient u-section-1" id="sec-8846">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="custom-expanded data-layout-selected u-align-center u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-image u-layout-cell u-size-20 u-image-1" data-image-width="620" data-image-height="357">
+                <div class="u-container-layout u-valign-middle u-container-layout-1"></div>
+              </div>
+              <div class="u-container-style u-layout-cell u-shape-rectangle u-size-40 u-white u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-1">Sing Up </h4>
+                  <div class="custom-expanded u-form u-white u-form-1">
+                    
+                    <form action="register" method="post" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 29px;" redirect="true">
+                     
+                      
+                      <div style="padding: 29px;" redirect="true"class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form">
+                      <div class="u-form-group u-form-group-1">
+                        <label for="text-151c" class="u-custom-font u-font-montserrat u-form-control-hidden u-label u-label-1"></label>
+                        {% for message in messages %}
+                        <input type="text" placeholder="" id="text-151c" name="error" value={{ message }} class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white">
+                        {% endfor %}
+                      </div>
+                      <div class="u-form-group u-form-radiobutton u-form-group-2">
+                        <label class="u-custom-font u-font-montserrat u-label u-label-2">User Type</label>
+                        <div class="u-form-radio-button-wrapper">
+                          <div class="u-input-row">
+                            <input id="field-80fb" type="radio" name="user_type" value="Patient" class="u-active-palette-1-dark-2 u-field-input u-hover-palette-1-light-1 u-palette-1-light-3 u-radius" required="required" data-calc="Patient" style="--radius:15px;">
+                            <label class="u-custom-font u-field-label u-font-montserrat u-text-black" for="field-80fb" style="font-size: 0.875rem;">Patient</label>
+                          </div>
+                          <div class="u-input-row">
+                            <input id="field-6764" type="radio" name="user_type" value="Hospital" class="u-active-palette-1-dark-2 u-field-input u-hover-palette-1-light-1 u-palette-1-light-3 u-radius" required="required" data-calc="Hospital" style="--radius:15px;">
+                            <label class="u-custom-font u-field-label u-font-montserrat u-text-black" for="field-6764" style="font-size: 0.875rem;">Hospital</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="u-form-group u-form-name u-form-group-3">
+                        <label for="name-b064" class="u-custom-font u-font-montserrat u-label u-label-3">UserName</label>
+                        <input type="text" placeholder="Enter UserName" id="name-b064" name="username" class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-font-montserrat u-input u-input-rectangle u-input-2" required="">
+                      </div>
+                      <div class="u-form-email u-form-group">
+                        <label for="email-b064" class="u-custom-font u-font-montserrat u-label u-label-4">Email</label>
+                        <input type="email" placeholder="Enter email" id="email-b064" name="email" class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-font-montserrat u-input u-input-rectangle u-input-3" required="required">
+                      </div>
+                      <div class="u-form-group">
+                        <label for="message-b064" class="u-custom-font u-font-montserrat u-label u-label-5">Password</label>
+                        <input placeholder="​Enter Password" rows="4" cols="50" id="message-b064" name="password1" class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-font-montserrat u-input u-input-rectangle u-input-4" required="required" type="password">
+                      </div>
+                      <div class="u-form-group u-form-group-6">
+                        <label for="text-6646" class="u-custom-font u-font-montserrat u-label u-label-6">Confirm Password</label>
+                        <input type="password" placeholder="" id="text-6646" name="password2" class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="required">
+                      </div>
+                      <br>
+                      <div class="u-align-center u-form-group u-form-submit">
+                        <a href="/Login" class="u-border-none u-btn u-btn-submit u-button-style u-custom-font u-font-montserrat u-hover-palette-1-dark-3 u-palette-1-dark-1 u-btn-1">Submit</a>
+                        <input type="submit" value="submit" class="u-form-control-hidden">
+                      </div> <br>
+                       <p class="u-align-center u-form-group u-form-text u-text u-text-2"> have an accout ? </p>
+                       {% comment %}
+                      <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                      <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                      <input type="hidden" value="" name="recaptchaResponse">
+                      <input type="hidden" name="formServices" value="a848e3ff-a60d-8257-0f4d-5740fbabc7fc"> {% endcomment %}
+                    </div>
+                    </form>
+                 
+                  </div>
+                
+                  <a href="/Login" class="u-active-none u-align-center u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-custom-font u-font-montserrat u-hover-none u-none u-text-grey-90 u-text-hover-palette-1-dark-1 u-btn-2">Log In </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </form>
+  
+    
+    
+    
+    
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  
+</body></html>
